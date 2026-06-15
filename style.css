@@ -1,66 +1,110 @@
 body {
     font-family: Georgia, serif;
-    line-height: 1.8;
+    line-height: 1.7;
     margin: 0;
     color: #333;
     background-color: #faf8f4;
 }
 
-header {
-    background: #e8e1d6;
+.hero {
+    background-image: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px;
 }
 
-header h1 {
+.hero-content {
+    background: rgba(255, 255, 255, 0.86);
+    padding: 35px 55px;
+    border-radius: 10px;
+    max-width: 850px;
+}
+
+.hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     font-weight: normal;
 }
 
-header p {
+.hero-content p {
     font-size: 1.2rem;
-    color: #666;
+    margin: 0;
+    color: #555;
 }
 
 section {
     max-width: 900px;
     margin: auto;
-    padding: 60px 25px;
+    padding: 35px 25px;
 }
 
 h2 {
     color: #5d4e37;
-    margin-bottom: 20px;
+    margin: 0 0 15px;
+}
+
+p {
+    margin: 0 0 18px;
 }
 
 ul {
     padding-left: 20px;
+    margin-top: 0;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.portfolio-image {
+    width: 100%;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 8px;
+}
+
+a {
+    color: #5d4e37;
 }
 
 footer {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     background: #e8e1d6;
     color: #666;
 }
-.hero {
-    background-image: url("images.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+footer p {
+    margin: 0;
 }
 
-.hero-content {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 35px 55px;
-    border-radius: 10px;
-    text-align: center;
+@media (max-width: 700px) {
+    .hero-content {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
 }
