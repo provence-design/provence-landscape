@@ -48,3 +48,19 @@ footer {
     background: #e8e1d6;
     color: #666;
 }
+.hero {
+    background-image: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 35px 55px;
+    border-radius: 10px;
+    text-align: center;
+}
